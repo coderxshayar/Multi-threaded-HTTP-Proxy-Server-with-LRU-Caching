@@ -82,7 +82,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 This project uses standard libraries available in UNIX-like operating systems and is inspired by common proxy server implementations.
 
-## Contact
 
-For questions or suggestions, you can reach out to [Your Name] at [your.email@example.com].
 
