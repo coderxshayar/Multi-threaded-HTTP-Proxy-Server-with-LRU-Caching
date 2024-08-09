@@ -12,6 +12,11 @@ This proxy server is a simple HTTP proxy that handles client requests, checks if
 - **Signal Handling**: Gracefully shuts down the server on SIGINT (Ctrl+C) and frees resources.
 - **Cache Management**: Print the contents of the cache on demand.
 
+## Design
+![http_diagram](./Design/http_diagram.png)
+
+
+
 ## Getting Started
 
 ### Prerequisites
