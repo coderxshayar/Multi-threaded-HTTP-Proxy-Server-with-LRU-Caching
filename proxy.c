@@ -11,7 +11,8 @@
 #define PORT 8080
 #define BUFFER_SIZE 20480
 #define MAX_CONNECTIONS 10
-int server_socket; // Make server_socket a global variable
+int server_socket; // server_socket a global variable
+const int MAX_CACHE_SIZE = 5; 
 
 
 const char *allowed_domains[] = {
@@ -43,7 +44,6 @@ CacheEntry *cache_tail = NULL;
 pthread_mutex_t cache_mutex = PTHREAD_MUTEX_INITIALIZER;
 int cache_size = 0;
 
-const int MAX_CACHE_SIZE = 5; // Adjust this value as needed
 
 void move_to_head(CacheEntry *entry) {
     if (entry == cache_head) {
